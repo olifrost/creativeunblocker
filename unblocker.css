@@ -1,0 +1,86 @@
+/*FONT*/
+body {
+    background-color: #0981BD;
+    font-size: 2em;
+}
+
+h1, h2, h3, h4, h5, h6, body {
+    font-family: 'Sue Ellen Francisco', cursive;
+    color: white;
+}
+
+#title {
+	margin-top: 2em;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+.lead {
+	font-size: 1.5em;
+		line-height: 0.3em;
+}
+
+
+/*a { color: #F01A59; }*/
+a { color: #FDB912; }
+
+/*a:hover { color: white }*/
+
+/*SPECIAL*/
+.navcon { font-size: 1.5em }
+
+#countdown { font-size: 1.5em; line-height: 2em; }
+
+#brief { font-size: 1.7em; }
+
+#brief-card {
+	color: white;
+	margin-top: 2em;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+#brief-card button {
+    width: 40%;
+    height: auto;
+}
+
+#gobutton {
+		color: #FDB912;
+    font-size: 1em;
+
+}
+
+/*HELP*/
+#help {
+    font-family: 'Sue Ellen Francisco', cursive;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#help img { height: 50% }
+
+#help p { margin: 4em 0em }
+
+/*BACKGROUND*/
+#unblocky {
+    background-image: url(brain.jpeg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: auto;
+    min-height: 600px;
+    max-width: 600px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    /*	height: 100vh;*/
+    /*	background-size: 100vh;*/
+}
+
+#help, .navcon { display: none }
