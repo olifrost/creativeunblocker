@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<title>Creative Unblocker</title>
@@ -10,102 +11,106 @@
 	<meta name="twitter:title" content="Creative Unblocker">
 	<meta name="twitter:description" content="randomly generated problems to unstick your brain">
 	<meta name="twitter:image" content="brain.jpeg">
-	<link rel="stylesheet" href="bootstrap/bootstrap.css"/>
-	<link rel="stylesheet" href="unblocker.css"/>
+	<link rel="stylesheet" href="bootstrap/bootstrap.css" />
+	<link rel="stylesheet" href="unblocker.css" />
 	<link href='http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-<div style="padding: 0 15px;">
-<div class="container-fluid">
-<div class="row">
-<div class="col-md-12" id="unblocky">
-	<div class="row">
-		<div class="col-md-12 text-center" id="title">
-			<h1>CREATIVE UNBLOCKER</h1>
-			<p class="lead">randomly generated problems to unstick your brain</p>
-		</div>
-	</div>
+	<div style="padding: 0 15px;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12" id="unblocky">
+					<div class="row">
+						<div class="col-md-12 text-center" id="title">
+							<h1>CREATIVE UNBLOCKER</h1>
+							<p class="lead">randomly generated problems to unstick your brain</p>
+						</div>
+					</div>
 
-	<div class="row">
-			<div class="col-md-12"><div id="brief-card" class="text-center" >
-				<p id="brief">You need a pen, paper and</p>
-				<p><span id="countdown">60 SECONDS</span></p>
-				<div class="progress">
-				  <div class="progress-bar" role="progressbar" id="progress" style="width:100%;">
-				  </div>
+					<div class="row">
+						<div class="col-md-12">
+							<div id="brief-card" class="text-center">
+								<p id="brief">You need a pen, paper and</p>
+								<p><span id="countdown">60 SECONDS</span></p>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" id="progress" style="width:100%;">
+									</div>
+								</div>
+								<button type="button" class="btn btn-link" onclick="writeSubjectBrief()"
+									id="gobutton"><span class="glyphicon glyphicon-pencil"></span> START</button>
+								</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12 text-center">
+
+								<p class="navcon"><a href="#help"><span
+											class="glyphicon glyphicon-question-sign"></span><br><span
+											class="glyphicon glyphicon-chevron-down"></span></a></p>
+							</div>
+						</div>
+
+					</div>
 				</div>
-				<button type="button" class="btn btn-link" onclick="writeSubjectBrief()" id="gobutton"><span class="glyphicon glyphicon-pencil"></span> START</button>
-				</p>
 			</div>
-	</div>
 
-	<div class="row">
+			<!--END HELP-->
+		</div>
+
+		<div class="row">
 			<div class="col-md-12 text-center">
+				<p class="navcon">
+					<a href="#title"><span class="glyphicon glyphicon-chevron-up"></span><br>
+						<span class="glyphicon glyphicon-home"></span></a>
+					<button type="button" class="btn btn-default btn-lg">
+						<span class="glyphicon glyphicon-star"></span> Star
+					</button>
+				</p>
 
-				<p class="navcon"><a href="#help"><span class="glyphicon glyphicon-question-sign"></span><br><span class="glyphicon glyphicon-chevron-down"></span></a></p>
+
 			</div>
-	</div>
+		</div>
 
-</div>
-</div>
-</div>
 
-<!--END HELP-->
-</div>
 
-<div class="row">
-	<div class="col-md-12 text-center">
-		<p class="navcon">
-		<a href="#title"><span class="glyphicon glyphicon-chevron-up"></span><br>
-		<span class="glyphicon glyphicon-home"></span></a>
-		<button type="button" class="btn btn-default btn-lg">
-		  <span class="glyphicon glyphicon-star"></span> Star
-		</button>
-		</p>
+		<footer role="contentinfo">
+			<div class="text-center">
 
+				<p id="noq"></p>
+
+			</div>
+		</footer>
 
 	</div>
-</div>
+	</div>
 
-
-
-<footer role="contentinfo">
-<div class="text-center">
-
-<p id="noq"></p>
-
-<p><a href="http://www.twitter.com/oliandjosie">@oliandjosie</p>
-</div>
-</footer>
-
-</div>
-</div>
-
-<!--<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>-->
-<script src="jquery.min.js" type="text/javascript"></script>
-<script src="words.js" type="text/javascript"></script>
-<script src="timer.js" type="text/javascript"></script>
-<script>
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script>
-<script>
-var noq = (briefier.length);
-$("#noq").text(NumberofQuestions);
-</script>
+	<!--<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>-->
+	<script src="jquery.min.js" type="text/javascript"></script>
+	<script src="words.js" type="text/javascript"></script>
+	<script src="timer.js" type="text/javascript"></script>
+	<script>
+		$(function () {
+			$('a[href*=#]:not([href=#])').click(function () {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		var noq = (briefier.length);
+		$("#noq").text(NumberofQuestions);
+	</script>
 
 </body>
+
 </html>
